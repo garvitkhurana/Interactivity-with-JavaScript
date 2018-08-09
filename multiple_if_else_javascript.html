@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade Calculator</title>
+</head>
+<body>
+	<input id="no" type="text" placeholder="Enter Score.." >
+<br>
+  <button type="submit" onclick="grade();window.location.reload();">Find Grade</button>
+ <script type="text/javascript">
+ 	function grade()
+{
+var score=document.getElementsByTagName('input')[0].value; 
+
+if (score>90)
+  window.alert("A");
+else if (score>80)
+  window.alert("B");
+else if (score>70)
+  window.alert("C");
+else if (score>60)
+  window.alert("D");
+else
+  window.alert("You failed");
+}
+
+ </script>
+
+</body>
+</html>
